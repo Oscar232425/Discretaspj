@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import sys, matplotlib.pyplot as plt, networkx as nx
 from matplotlib.patches import FancyArrowPatch
 
@@ -80,3 +81,6 @@ if __name__=='__main__':
         plt.ioff(); plt.show()
     except Exception as e:
         print("RECHAZA:", e)
+=======
+
+>>>>>>> c614c36d12ec3c31394fdeb6055d2acd1436cb0e
