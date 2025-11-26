@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import sys, matplotlib.pyplot as plt, networkx as nx
 from matplotlib.patches import FancyArrowPatch
 
@@ -12,6 +12,7 @@ delta = {("q0","0"):"q0",
         ("q1","0"):"q2",
         ("q2","1"):"q1",
         ("q2","0"):"q0",}
+
 
 
 q0, F = "q0", {"q2"}
@@ -71,7 +72,7 @@ def draw_step(current, idx, sym=None):
 
 # === main ===
 if __name__=='__main__':
-    s = sys.argv[1] if len(sys.argv)>1 else input("Cadena (a/b): ").strip()
+    s = sys.argv[1] if len(sys.argv)>1 else input("Cadena (0/1): ").strip()
     try:
         steps, ok = run(s); print("ACEPTA" if ok else "RECHAZA", f"(estado final: {steps[-1]})")
         plt.ion(); draw_step(steps[0],0)
@@ -79,6 +80,3 @@ if __name__=='__main__':
         plt.ioff(); plt.show()
     except Exception as e:
         print("RECHAZA:", e)
-=======
-
->>>>>>> c614c36d12ec3c31394fdeb6055d2acd1436cb0e
